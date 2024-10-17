@@ -1,10 +1,13 @@
-/*:root{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root{
     --base-color: white;
     --base-variant: #e8e9ed;
     --text-color: #111528;
     --secondary-text: #232738;
     --primary-color: #3a435d;
     --accent-color: #0071ff;
+    --max-width: 1200px;
   }
   .darkmode{
     --base-color: #070b1d;
@@ -17,39 +20,78 @@
   *{
     margin: 0;
     padding: 0;
-  }
-  html{
+    box-sizing: border-box;
     font-family: Poppins;
   }
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  
+  .nav__content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav .logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+    text-decoration: none;
+    margin-left: 70px;
+  }
+  
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+  }
+  
+  ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+  }
+  
+  ul li a i{
+      font-size: 1.5rem;
+  }
+  
+  ul li a:hover {
+    border-top-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: var(--secondary-color);
+  }
+
   body{
     min-height: 100vh;
     background-color: var(--base-color);
     color: var(--text-color);
   }
-  header, section{
-    padding: 70px min(50px, 7%);
-  }
-  section{
-    background-color: var(--base-variant);
-  }
+
   p{
     margin: 10px 0 20px 0;
     color: var(--secondary-text);
   }
   button{
+    margin-top: 10%;
     border: none;
-    padding: .8em 2em;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 4px;
-    font: inherit;
-    text-transform: uppercase;
-    font-weight: 500;
     cursor: pointer;
   }
-  .cta-button{
-    background-color: var(--accent-color);
-  }
+
   #theme-switch{
     height: 50px;
     width: 50px;
@@ -74,231 +116,100 @@
   }
   .darkmode #theme-switch svg:last-child{
     display: block;
-  }*/
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-
-:root {
-  --primary-color: #a855f7;
-  --primary-color-dark: #9333ea;
-  --secondary-color: #ca8a04;
-  --text-dark: #1f2937;
-  --text-light: #6b7280;
-  --extra-light: #faf5ff;
-  --max-width: 1200px;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-nav {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-
-.nav__content {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 1.5rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav .logo a {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #000;
-  transition: 0.3s;
-}
-nav .logo a:hover {
-  color: var(--primary-color-dark);
-}
-
-nav .checkbox {
-  display: none;
-}
-
-nav input {
-  display: none;
-}
-nav .checkbox i {
-  font-size: 2rem;
-  color: var(--primary-color);
-  cursor: pointer;
-}
-
-ul {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  list-style: none;
-  transition: left 0.3s;
-}
-
-ul li a {
-  padding: 0.5rem 1rem;
-  border: 2px solid transparent;
-  text-decoration: none;
-  font-weight: 600;
-  color: var(--text-dark);
-  transition: 0.3s;
-}
-
-ul li a i{
-    font-size: 1.5rem;
-}
-
-ul li a:hover {
-  border-top-color: var(--secondary-color);
-  border-bottom-color: var(--secondary-color);
-  color: var(--secondary-color);
-}
-
-.section {
-  background-color: var(--extra-light);
-}
-
-.section__container {
-  min-height: 100vh;
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
-}
-
-.left_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.subtitle {
-  font-size: 2.2rem;
-  letter-spacing: 2px;
-  color: var(--text-light);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.title {
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 3rem;
-  color: var(--text-dark);
-  margin-bottom: 1rem;
-}
-
-.title span {
-  font-weight: 600;
-}
-
-.description {
-  line-height: 1.5rem;
-  color: var(--text-light);
-  margin-bottom: 2rem;
-}
-
-.action__btns {
-  display: flex;
-  gap: 1rem;
-}
-
-.action__btns button {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  padding: 1rem 2rem;
-  outline: none;
-  border: 2px solid var(--primary-color);
-  border-radius: 10px;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.hire__me {
-  background-color: var(--primary-color);
-  color: #ffffff;
-}
-
-.hire__me:hover {
-  background-color: var(--primary-color-dark);
-}
-
-.portfolio {
-  color: var(--primary-color);
-}
-
-.portfolio:hover {
-  background-color: var(--primary-color-dark);
-  color: #ffffff;
-}
-
-.right_content {
-  display: grid;
-  place-items: center;
-}
-
-.right_content .img { 
-  background-image: url(./Assets/profile.jpg);
-  background-position: center;
-  background-size: cover;
-  width: 280px;
-  height: 280px;
-  border-radius: 100%;
-}
-
-@media (width < 750px) {
-  nav .checkbox {
-    display: block;
   }
-
-  ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 85px);
-    left: -100%;
-    top: 85px;
+  .section {
     background-color: var(--extra-light);
+  }
+  
+  .section__container {
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  
+  .left_content {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3rem;
+    font-family: Poppins;
   }
-
-  nav #check:checked ~ ul {
-    left: 0;
+  
+  .subtitle {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    color: var(--text-light);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
   }
-
-  ul li a {
-    font-size: 1.25rem;
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
   }
-
-  .section__container {
-    padding: 10rem 1rem 5rem 1rem;
-    text-align: center;
-    grid-template-columns: repeat(1, 1fr);
+  
+  .title span {
+    font-weight: 600;
   }
-
-  .image {
-    grid-area: 1/1/2/2;
+  
+  
+  .right_content {
+    display: grid;
+    place-items: center;
   }
-
-  .action__btns {
-    margin: auto;
+  
+  .right_content .img { 
+    background-image: url(./Assets/profile.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    border: 1px solid #fff;
   }
-}
+  
+  @media (width < 750px) {
+    nav .checkbox {
+      display: block;
+    }
+  
+    ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 85px);
+      left: -100%;
+      top: 85px;
+      background-color: var(--extra-light);
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+    }
+  
+    nav #check:checked ~ ul {
+      left: 0;
+    }
+  
+    ul li a {
+      font-size: 1.25rem;
+    }
+  
+    .section__container {
+      padding: 10rem 1rem 5rem 1rem;
+      text-align: center;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .image {
+      grid-area: 1/1/2/2;
+    }
+  
+    .action__btns {
+      margin: auto;
+    }
+  }
