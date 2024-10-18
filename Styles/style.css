@@ -104,6 +104,7 @@
     position: fixed;
     top: 20px;
     right: 20px;
+    border: 1px solid #fff;
   }
   #theme-switch svg{
     fill: var(--primary-color);
@@ -165,7 +166,7 @@
   }
   
   .right_content .img { 
-    background-image: url(./Assets/profile.jpg);
+    background-image: url(../Assets/profile.jpg);
     background-position: center;
     background-size: cover;
     width: 280px;
