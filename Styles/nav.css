@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 :root {
     --base-color: #fff;
     --dark-color: #000;
+    --logo-color: #fff
 }
 
 * {
+    font-family: Poppins;
     margin: 0;
     padding: 0;
 }
@@ -22,13 +26,13 @@ a:hover {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    color: var(--logo-color)
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background-color: var(--dark-color);
     height: 8vh;
 }
@@ -47,6 +51,11 @@ nav {
     color: var(--base-color);
 }
 
+.darkmode .nav-list li a {
+    color: var(--nav-text-color);
+    color: var(--logo-color);
+}
+
 .mobile-menu {
     display: none;
     cursor: pointer;
@@ -61,10 +70,8 @@ nav {
     transition: 0.3s;
 }
 
-@media (max-width: 999px) {
-    body {
-        overflow-x: hidden;
-    }
+@media (max-width: 1000px) {
+
 
     .nav-list {
         position: absolute;
@@ -76,8 +83,13 @@ nav {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
+        opacity: 0;
+        /* Gör menyn osynlig */
+        visibility: hidden;
+        /* Döljer menyn från layouten */
+        transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+        /* Lägg till övergångar */
+
     }
 
     .nav-list li {
@@ -96,7 +108,10 @@ nav {
 }
 
 .nav-list.active {
-    transform: translateX(0);
+    opacity: 1;
+    /* Gör menyn synlig */
+    visibility: visible;
+    /* Återställ synligheten */
 }
 
 @keyframes navLinkFade {
