@@ -12,37 +12,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Darkmode</title>
     <link rel="stylesheet" href="../Styles/style.css" />
+    <link rel="stylesheet" href="../Styles/nav.css" />
     <link rel="stylesheet" href="../Styles/contact.css" />
-    <script type="text/javascript" src="../JS/darkmode.js" defer></script>
   </head>
   <body>
-    <nav>
-      <div class="nav__content">
-        <div class="logo"><a href="#">George</a></div>
-        <ul>
+    <header>
+      <nav>
+        <a class="logo" href="/">George</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./About.html">About</a></li>
           <li><a href="./Tech.html">Tech Stack</a></li>
-          <li><a href="./project.html">Projects</a></li>
+          <li><a href="./Project.html">Projects</a></li>
           <li><a href="./Contact.html">Contact</a></li>
-          <li>
-            <a href="https://github.com/"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://x.com/?lang=sv"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        
+        <li>
+          <a href="https://github.com/"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://x.com/?lang=sv"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+      </nav>
+    </header>
     <button id="theme-switch">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -68,5 +74,7 @@
 
     <p class="text">For any questions please mail us:</p>
     <p class="mail">hi@pavanmg.in</p>
+    <script type="text/javascript" src="../JS/Mobil.js" defer></script>
+    <script type="text/javascript" src="../JS/darkmode.js" defer></script>
   </body>
 </html>
