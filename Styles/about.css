@@ -53,7 +53,7 @@ article {
     align-items: center;
 }
 
-.h {
+.subtitle {
     @media (min-width: 768px) {
         font-size: 1.125rem;
         line-height: 1.75rem;
@@ -79,15 +79,16 @@ article {
     color: var(--base-color);
 }
 
-.a {
+.flexbox_container {
     display: flex;
     padding-top: 0.5rem;
     justify-content: space-between;
 }
 
-.b {
+.flexbox_parent {
     display: flex;
     flex-direction: column;
+
 
 
     @media (min-width: 768px) {
@@ -96,18 +97,18 @@ article {
 
 }
 
-.c {
+.flexbox_left {
     display: flex;
     padding-right: 1.25rem;
     align-items: center;
 }
 
-.e {
+.flexbox_right {
     display: flex;
     align-items: center;
 }
 
-.d {
+.description {
     padding-left: 0.25rem;
     font-size: 0.75rem;
     line-height: 1rem;
@@ -121,7 +122,7 @@ article {
 
 }
 
-.f {
+.date {
     padding-left: 0.25rem;
     min-width: fit-content;
     font-size: 0.75rem;
