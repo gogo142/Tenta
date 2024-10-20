@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 :root {
-  --base-color: white;
+  --base-color: #fff;
   --base-variant: #e8e9ed;
   --text-color: #111528;
   --secondary-text: #232738;
   --primary-color: #3a435d;
   --accent-color: #0071ff;
-  --max-width: 1200px;
 }
 
 .darkmode {
@@ -55,7 +54,7 @@ button {
   position: fixed;
   top: 20px;
   right: 20px;
-  border: 1px solid #fff;
+  border: 1px solid var(--base-variant);
 }
 
 #theme-switch svg {
@@ -128,7 +127,7 @@ button {
   width: 280px;
   height: 280px;
   border-radius: 100%;
-  border: 1px solid #fff;
+  border: 1px solid var(--base-variant)
 }
 
 @media (width < 750px) {
