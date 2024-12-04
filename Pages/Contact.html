@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/style.css" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="script.js" defer></script>
+    <script src="../JS/darkmode.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -8,45 +16,43 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Darkmode</title>
-    <link rel="stylesheet" href="../Styles/style.css" />
-    <link rel="stylesheet" href="../Styles/nav.css" />
-    <link rel="stylesheet" href="../Styles/contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="logo" href="../index.html">George</a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+    <header class="container">
+      <div class="under-container">
+        <div class="logo">
+          <p class="logo-tag">{007}</p>
+          <p>George</p>
         </div>
-        <ul class="nav-list">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./About.html">About</a></li>
-          <li><a href="./Tech.html">Tech Stack</a></li>
-          <li><a href="./Project.html">Projects</a></li>
-          <li><a href="./Contact.html">Contact</a></li>
-        
-        <li>
-          <a href="https://github.com/"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </li>
-        <li>
+        <div class="hamburger-meny">
+          <nav class="bar"></nav>
+          <nav class="bar"></nav>
+          <nav class="bar"></nav>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <div class="nav-list">
+          <a href="../index.html">Home</a>
+          <a href="../Pages/About.html">About</a>
+          <a href="././Tech.html">Tech Stack</a>
+          <a href="../Pages/Project.html">Projects</a>
+          <a href="../Pages/Contact.html">Contact</a>
+        </div>
+        <div class="class-logos">
+          <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+
           <a href="https://x.com/?lang=sv"
             ><i class="fa-brands fa-twitter"></i
           ></a>
-        </li>
-        <li>
+
           <a href="https://www.linkedin.com/"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
-        </li>
-      </ul>
+        </div>
       </nav>
     </header>
     <button id="theme-switch">
@@ -71,10 +77,14 @@
         />
       </svg>
     </button>
-
-    <p class="text">For any questions please mail us:</p>
-    <p class="mail">hi@pavanmg.in</p>
-    <script type="text/javascript" src="../JS/Mobil.js" defer></script>
-    <script type="text/javascript" src="../JS/darkmode.js" defer></script>
+    <div class="mail-con">
+      <p>For any questions please mail us:</p>
+      <a class="mail" href="">George.manazz@gmail.com</a>
+    </div>
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Designed and built by George M with Love & Coffee</p>
+      </div>
+    </footer>
   </body>
 </html>

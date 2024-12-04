@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/style.css" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="script.js" defer></script>
+    <script src="../JS/darkmode.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -8,46 +16,43 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Darkmode</title>
-    <link rel="stylesheet" href="../Styles/about.css" />
-    <link rel="stylesheet" href="../Styles/nav.css" />
-    <link rel="stylesheet" href="../Styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
-    <header>
-      <nav>
-        <a class="logo" href="../index.html">George</a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+    <header class="container">
+      <div class="under-container">
+        <div class="logo">
+          <p class="logo-tag">{007}</p>
+          <p>George</p>
         </div>
-        <ul class="nav-list">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./About.html">About</a></li>
-          <li><a href="./Tech.html">Tech Stack</a></li>
-          <li><a href="./Project.html">Projects</a></li>
-          <li><a href="./Contact.html">Contact</a></li>
-        
-        <li>
-          <a href="https://github.com/"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </li>
-        <li>
+        <div class="hamburger-meny">
+          <nav class="bar"></nav>
+          <nav class="bar"></nav>
+          <nav class="bar"></nav>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <div class="nav-list">
+          <a href="../index.html">Home</a>
+          <a href="../Pages/About.html">About</a>
+          <a href="././Tech.html">Tech Stack</a>
+          <a href="../Pages/Project.html">Projects</a>
+          <a href="../Pages/Contact.html">Contact</a>
+        </div>
+        <div class="class-logos">
+          <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+
           <a href="https://x.com/?lang=sv"
             ><i class="fa-brands fa-twitter"></i
           ></a>
-        </li>
-        <li>
+
           <a href="https://www.linkedin.com/"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
-        </li>
-      </ul>
+        </div>
       </nav>
     </header>
     <button id="theme-switch">
@@ -72,67 +77,259 @@
         />
       </svg>
     </button>
+    <section class="about-con">
+      <h2 class="child-h2">About Me</h2>
+      <div class="text-box">
+        The Generator App is an online tool that helps you to export ready-made
+        templates ready to work as your future website. It helps you to combine
+        slides, panels and other components and export it as a set of static
+        files: HTML/CSS/JS.
+      </div>
+    </section>
+    <section id="parent-work" class="parentwork">
+      <h2 class="child-h2">Work Experience</h2>
+      <div class="article">
+        <p class="jobs">Junior Web Developer</p>
+        <p class="info">Full time</p>
+      </div>
+      <div class="article">
+        <figure class="svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M11.5 1L2 6v2h19V6m-5 4v7h3v-7M2 22h19v-3H2m8-9v7h3v-7m-9 0v7h3v-7z"
+            />
+          </svg>
+        </figure>
+        <p id="firstwork" class="class-what">Dr.Rajkmans Learning apps</p>
+        <figure class="svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              color="currentColor"
+            >
+              <circle cx="12" cy="9" r="2.5" />
+              <path
+                d="m9 17l9-11M6 12l8-9.5M7 5l3 2.5M12.01 22c-.354 0-.519-.151-.701-.659c-.48-1.69-1.378-3.15-2.467-4.521c-.986-1.317-2.44-2.816-3.196-4.524C3.546 7.655 6.801 1.992 11.993 2c5.335-.015 8.543 5.851 6.263 10.545a21 21 0 0 1-2.339 3.333c-1.381 1.631-2.622 3.397-3.211 5.466c-.136.399-.31.656-.696.656"
+              />
+            </g>
+          </svg>
+        </figure>
+        <p id="locationone" class="class-place">Bengaluru</p>
+        <figure class="svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M9 10v2H7v-2zm4 0v2h-2v-2zm4 0v2h-2v-2zm2-7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1V1h2v2h8V1h2v2zm0 16V8H5v11zM9 14v2H7v-2zm4 0v2h-2v-2zm4 0v2h-2v-2z"
+            />
+          </svg>
+        </figure>
+        <p id="timeone" class="class-time">Sep 2020 - Dec 2021</p>
+      </div>
 
-    <main>
-      <section>
-        <h1>
-          About Me
-        </h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </section>
-      <section>
-        <h1>
-          Work Experience
-        </h1>
-        <article>
-          <div class="con">
-            <h1 class="h">Frontend Web Developer</h1>
-            <div class="btn">
-              Full Time
-            </div>
-          </div>
-          <div class="a">
-            <div class="b">
-              <div class="c">
-                <p class="d">Company Name here</p>
-              </div>
-              <div class="e">
-    
-                <p class="d">Stockholm</p>
-              </div>
-            </div>
-            <p class="f">Sep 2021 - Dec 2021</p>
-          </div>
-        </article>
-      </section>
-      <section>
-        <h1>
-          Education
-        </h1>
-        <article>
-          <div class="con">
-            <h1 class="subtitle">Frontend Web Developer</h1>
-            <div class="btn">
-              Full Time
-            </div>
-          </div>
-          <div class="flexbox_container ">
-            <div class="flexbox_parent">
-              <div class="flexbox_left">
-                <p class="description">Company Name here</p>
-              </div>
-              <div class="flexbox_right">
-    
-                <p class="description">Stockholm</p>
-              </div>
-            </div>
-            <p class="date">Sep 2021 - Dec 2021</p>
-          </div>
-        </article>
-      </section>
-    </main>
+      <div class="margin-article">
+        <p class="jobs">Junior Web Developer</p>
+        <p class="info">Full time</p>
+      </div>
+      <div class="article">
+        <figure class="svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M11.5 1L2 6v2h19V6m-5 4v7h3v-7M2 22h19v-3H2m8-9v7h3v-7m-9 0v7h3v-7z"
+            />
+          </svg>
+        </figure>
+        <p id="secondwork" class="class-what">Dr.Rajkmans Learning apps</p>
+        <figure class="svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              color="currentColor"
+            >
+              <circle cx="12" cy="9" r="2.5" />
+              <path
+                d="m9 17l9-11M6 12l8-9.5M7 5l3 2.5M12.01 22c-.354 0-.519-.151-.701-.659c-.48-1.69-1.378-3.15-2.467-4.521c-.986-1.317-2.44-2.816-3.196-4.524C3.546 7.655 6.801 1.992 11.993 2c5.335-.015 8.543 5.851 6.263 10.545a21 21 0 0 1-2.339 3.333c-1.381 1.631-2.622 3.397-3.211 5.466c-.136.399-.31.656-.696.656"
+              />
+            </g>
+          </svg>
+        </figure>
+        <p id="locationtwo" class="class-place">Bengaluru</p>
+        <figure class="svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M9 10v2H7v-2zm4 0v2h-2v-2zm4 0v2h-2v-2zm2-7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1V1h2v2h8V1h2v2zm0 16V8H5v11zM9 14v2H7v-2zm4 0v2h-2v-2zm4 0v2h-2v-2z"
+            />
+          </svg>
+        </figure>
+        <p id="timetwo" class="class-time">Sep 2020 - Dec 2021</p>
+      </div>
 
-    <script type="text/javascript" src="../JS/Mobil.js" defer></script>
-    <script type="text/javascript" src="../JS/darkmode.js" defer></script>
+      <div class="margin-article">
+        <p class="jobs">Junior Web Developer</p>
+        <p class="info">Full time</p>
+      </div>
+      <div class="article">
+        <figure class="svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M11.5 1L2 6v2h19V6m-5 4v7h3v-7M2 22h19v-3H2m8-9v7h3v-7m-9 0v7h3v-7z"
+            />
+          </svg>
+        </figure>
+        <p id="thirdwork" class="class-what">Dr.Rajkmans Learning apps</p>
+        <figure class="svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              color="currentColor"
+            >
+              <circle cx="12" cy="9" r="2.5" />
+              <path
+                d="m9 17l9-11M6 12l8-9.5M7 5l3 2.5M12.01 22c-.354 0-.519-.151-.701-.659c-.48-1.69-1.378-3.15-2.467-4.521c-.986-1.317-2.44-2.816-3.196-4.524C3.546 7.655 6.801 1.992 11.993 2c5.335-.015 8.543 5.851 6.263 10.545a21 21 0 0 1-2.339 3.333c-1.381 1.631-2.622 3.397-3.211 5.466c-.136.399-.31.656-.696.656"
+              />
+            </g>
+          </svg>
+        </figure>
+        <p id="locationthree" class="class-place">Bengaluru</p>
+        <figure class="svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M9 10v2H7v-2zm4 0v2h-2v-2zm4 0v2h-2v-2zm2-7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1V1h2v2h8V1h2v2zm0 16V8H5v11zM9 14v2H7v-2zm4 0v2h-2v-2zm4 0v2h-2v-2z"
+            />
+          </svg>
+        </figure>
+        <p id="timethree" class="class-time">Sep 2020 - Dec 2021</p>
+      </div>
+    </section>
+    <section id="parent-education" class="parent-education">
+      <h2 class="child-h2">Education</h2>
+      <div class="margin-article">
+        <p id="firsteducation" class="class-jobs">
+          Bachelor in Electronics & Communication
+        </p>
+        <p id="ocupationfour" class="class-info">Full time</p>
+      </div>
+      <div class="article">
+        <figure class="svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M11.5 1L2 6v2h19V6m-5 4v7h3v-7M2 22h19v-3H2m8-9v7h3v-7m-9 0v7h3v-7z"
+            />
+          </svg>
+        </figure>
+        <p id="educationone" class="class-what">
+          Bangalore Institute of Technology
+        </p>
+        <figure class="svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              color="currentColor"
+            >
+              <circle cx="12" cy="9" r="2.5" />
+              <path
+                d="m9 17l9-11M6 12l8-9.5M7 5l3 2.5M12.01 22c-.354 0-.519-.151-.701-.659c-.48-1.69-1.378-3.15-2.467-4.521c-.986-1.317-2.44-2.816-3.196-4.524C3.546 7.655 6.801 1.992 11.993 2c5.335-.015 8.543 5.851 6.263 10.545a21 21 0 0 1-2.339 3.333c-1.381 1.631-2.622 3.397-3.211 5.466c-.136.399-.31.656-.696.656"
+              />
+            </g>
+          </svg>
+        </figure>
+        <p id="locationfour" class="class-place">Bengaluru</p>
+        <figure class="svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M9 10v2H7v-2zm4 0v2h-2v-2zm4 0v2h-2v-2zm2-7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1V1h2v2h8V1h2v2zm0 16V8H5v11zM9 14v2H7v-2zm4 0v2h-2v-2zm4 0v2h-2v-2z"
+            />
+          </svg>
+        </figure>
+        <p id="timefour" class="class-time">Aug 2015 - Dec 2020</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Designed and built by George M with Love & Coffee</p>
+      </div>
+    </footer>
   </body>
 </html>
